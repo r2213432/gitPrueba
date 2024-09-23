@@ -1,6 +1,6 @@
 
 public class principal {
 	public static void main(String[] args) {
-		System.out.println("Se termina la clase (porfis)");
+		System.out.println("Nunca se terminara la clase (wuajajajaj)");
 	}
 }
