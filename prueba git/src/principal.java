@@ -6,5 +6,6 @@ public class principal {
 		
 		System.out.println("Nunca se terminara la clase (llora demasiado*)");
 		System.out.println();
+		
 	}
 }
