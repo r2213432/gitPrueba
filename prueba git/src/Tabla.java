@@ -1,18 +1,34 @@
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.ScrollPane;
 import java.awt.Scrollbar;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JTable;
 import javax.swing.table.AbstractTableModel;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.TableCellRenderer;
 
 public class Tabla extends JFrame{
 
 	public static void main(String[] args) {
 		Tabla ventana = new Tabla();
 
+	}
+	public class mirenderer implements TableCellRenderer{
+
+		@Override
+		public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
+				int row, int column) {
+			
+			JLabel etiqueta = new JLabel("prueba");
+			return etiqueta;
+		}
+		
+		
 	}
 	
 	public class mimodelo extends AbstractTableModel{
