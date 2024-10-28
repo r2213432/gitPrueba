@@ -1,9 +1,11 @@
 package main;
 
+import gui.MainWindow;
+
 public class principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		MainWindow ventana = new MainWindow();
 
 	}
 

@@ -80,7 +80,9 @@ public class Principal extends JFrame{
 	}
 	
 	public static void main(String[] args) {
-		Principal ventana = new Principal();
+		SwingUtilities.invokeLater(() -> {
+			Principal ventana = new Principal();
+		});
 	}
 	
 	//Solo un hilo puede utilizar este metodo
